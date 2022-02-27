@@ -1,0 +1,10 @@
+CRITICAL - 2022-02-27 15:57:03 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 C:\laragon\www\codeigniteradminlte\system\View\View.php(210): include()
+#1 C:\laragon\www\codeigniteradminlte\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\codeigniteradminlte\system\Common.php(1089): CodeIgniter\View\View->render('dashboard/index', Array, true)
+#3 C:\laragon\www\codeigniteradminlte\app\Controllers\Dashboard.php(9): view('dashboard/index')
+#4 C:\laragon\www\codeigniteradminlte\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#5 C:\laragon\www\codeigniteradminlte\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\laragon\www\codeigniteradminlte\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\codeigniteradminlte\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
