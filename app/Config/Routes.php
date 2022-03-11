@@ -32,7 +32,11 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Dashboard::index');
-$routes->get('/widget', 'Widget::index');
+$routes->get('/companies', 'Company::index');
+$routes->get('/companies/create', 'Company::create');
+$routes->post('/companies', 'Company::store');
+$routes->get('/companies/(:num)/edit', 'Company::edit/$1');
+$routes->post('/companies/(:num)', 'Company::update/$1');
 
 /*
  * --------------------------------------------------------------------
